@@ -1,0 +1,90 @@
+/* Container Styling */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FEFAE0; /* Light cream background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between inputs and buttons */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between label and input, if you add labels */
+}
+
+.form-input {
+    padding: 12px;
+    border: 1px solid #D6BD98; /* Light beige border */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #1A3636; /* Dark teal text */
+    background-color: #FAEDCE; /* Light cream background */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #1A3636; /* Dark teal background */
+    color: #FEFAE0; /* Light cream text */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #40534C; /* Dark green background on hover */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+}
+
+.auth-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #D6BD98; /* Light beige background */
+    color: #1A3636; /* Dark teal text */
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.register-button:hover {
+    background-color: #BCC0A4; /* Slightly darker beige on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+    
+    .form-input {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .submit-button, .register-button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
